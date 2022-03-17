@@ -19,13 +19,13 @@ public class Category implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	private String mane;
+	private String name;
 	
 	public Category() {}
 
 	public Category(Long id, String mane) {
 		this.id = id;
-		this.mane = mane;
+		this.name = mane;
 	}
 
 	public Long getId() {
@@ -37,11 +37,11 @@ public class Category implements Serializable {
 	}
 
 	public String getMane() {
-		return mane;
+		return name;
 	}
 
 	public void setMane(String mane) {
-		this.mane = mane;
+		this.name = mane;
 	}
 
 	@Override
