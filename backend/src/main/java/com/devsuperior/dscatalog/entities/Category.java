@@ -36,11 +36,11 @@ public class Category implements Serializable {
 		this.id = id;
 	}
 
-	public String getMane() {
+	public String getName() {
 		return name;
 	}
 
-	public void setMane(String mane) {
+	public void setName(String mane) {
 		this.name = mane;
 	}
 
