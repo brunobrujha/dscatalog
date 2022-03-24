@@ -32,6 +32,7 @@ public class CategoryService {
 
 	}
 	
+	@Transactional(readOnly = true)
 	public Page<CategoryDTO> findAllPaged(PageRequest pageRequest) {
 		Page<Category> list = repository.findAll(pageRequest);
 
